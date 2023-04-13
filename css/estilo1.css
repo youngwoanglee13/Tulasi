@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    height: 100%;
+}
+
+body{
+    background-color: #aca9a9;
+    display: grid;
+    gap: 1px;
+    min-height: 100%;
+    text-align: center;
+    grid-template: 
+    "header" 76px
+    "navbar"    40px
+    "main"  auto
+    "footer"  30px;
+}
+.header{
+    grid-area: header;
+    background-color: rgb(205, 148, 102);
+}
+.navbar{
+    grid-area: navbar;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+}
+.main{
+    grid-area: main;
+    background-color: rgb(204, 204, 204);
+}
+.footer{
+    grid-area: footer;
+    background-color: rgb(205, 148, 102);
+}
+#logo{
+    margin-top: -15px;
+}
+#foto{
+    width: 100%
+}
+p{
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 20px;
+    text-align: justify;
+    padding: 0 20px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    background-color: #111;
+  }
+@media (min-width:700px){
+    body{
+    
+        grid-template: 
+        "header header" 100px
+        "navbar main" auto
+        "footer footer" 30px/
+        140px auto;
+    }
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        background-color: #333;
+      }
+      
+      li a {
+        display: block;
+        color: white;
+        padding: 8px 50px;
+        text-decoration: none;
+      }
+      
+      /* Change the link color on hover */
+      li a:hover {
+        background-color: #111;
+    
+      }
+      #logo{
+        margin-top: auto;
+    }
+    #foto{
+        width: 70%;
+        margin-top: 30px;
+    }  
+    p{
+        padding: 0 10%;
+        font-size: 20px;
+    } 
+}
+
